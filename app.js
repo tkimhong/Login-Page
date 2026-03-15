@@ -46,7 +46,8 @@ const requireLogin = (req, res, next) => {
 
 // GET /login
 app.get("/login", (req, res) => {
-  res.render("login");
+  const theme = req.signedCookies.theme || "light";
+  res.render("login", { error: req.query.error, theme });
 });
 
 // POST /login
@@ -64,7 +65,8 @@ app.post("/login", (req, res) => {
 
 // GET /profile
 app.get("/profile", requireLogin, (req, res) => {
-  res.render("profile", { user: req.session.user });
+  const theme = req.signedCookies.theme || "light";
+  res.render("profile", { user: req.session.user, theme });
 });
 
 // GET /logout
@@ -84,7 +86,7 @@ app.get("/toggle-theme", (req, res) => {
     httpOnly: true,
   });
 
-  res.redirect("back");
+  res.redirect(req.headers.referer || "/login");
 });
 
 app.listen(3000, () => {
