@@ -66,3 +66,10 @@ app.post("/login", (req, res) => {
 app.get("/profile", requireLogin, (req, res) => {
   res.render("profile", { user: req.session.user });
 });
+
+// GET /logout
+app.get("/logout", (req, res) => {
+  req.session.destroy();
+  res.clearCookie("connect.sid");
+  res.redirect("/login");
+});
