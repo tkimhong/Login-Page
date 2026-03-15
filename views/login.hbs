@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Instantgram.com</h1>
+  <p>Free Login!!! Click Here:</p>
+
+  <div class="login-wrapper">
+    <img src="/winning-smile.webp" alt="thumbs up" />
+
+    <div class="form-box">
+      {{#if error}}
+        <p class="error">{{error}}</p>
+      {{/if}}
+
+      <form action="/login" method="POST">
+        <label>User EMail:</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="--> Enter Login here <--"
+          required
+        />
+        <label>Secret Password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="--> Enter Secret Password here <--"
+          required
+        />
+        <button type="submit">+++ Secure SSL Login +++</button>
+      </form>
+    </div>
+
+    <img src="/winning-smile.webp" alt="thumbs up" />
+  </div>
+
+  <p>Browdcaste yourselve!!!</p>
+
+  <img src="/padlock.webp" alt="Connection Secure" />
+
+  <a href="/toggle-theme">+++ Secure Toggle Theme +++</a>
+</div>
