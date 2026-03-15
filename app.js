@@ -61,3 +61,8 @@ app.post("/login", (req, res) => {
     res.redirect("/login?error=Invalid username or password");
   }
 });
+
+// GET /profile
+app.get("/profile", requireLogin, (req, res) => {
+  res.render("profile", { user: req.session.user });
+});
