@@ -21,3 +21,16 @@ const users = {
     bio: "Full-stack enthusiast and coffee drinker.",
   },
 };
+
+app.set("view engine", "hbs");
+app.set("views", path.join(__dirname, "views"));
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser("instantgram-dididi-dididi-dididididi"));
+app.use(
+  session({
+    secret: "instantgram-dididi-dididi-dididididi",
+    resave: false,
+    saveUninitialized: false,
+  }),
+);
