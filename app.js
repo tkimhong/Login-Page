@@ -48,3 +48,16 @@ const requireLogin = (req, res, next) => {
 app.get("/login", (req, res) => {
   res.render("login");
 });
+
+// POST /login
+app.post("/login", (req, res) => {
+  const { username, password } = req.body;
+  const user = users[username];
+
+  if (user && user.password === password) {
+    req.session.user = user;
+    res.redirect("/profile");
+  } else {
+    res.redirect("/login?error=Invalid username or password");
+  }
+});
