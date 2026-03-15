@@ -1,0 +1,145 @@
+body {
+    background-color: #add8e6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body.dark {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+body.dark a {
+    color: #7eb8f7;
+}
+
+body.dark .profile-box {
+    border-color: #aaa;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+}
+
+.profile-box p {
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    margin: 16px 0;
+}
+
+.free-login {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.login-wrapper img {
+    width: 420px;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.form-box {
+    border: 2px solid red;
+    padding: 60px 80px;
+    text-align: left;
+    min-width: 500px;
+}
+
+.form-box label {
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 30px;
+}
+
+.form-box input {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px 4px;
+}
+
+.form-box button {
+    font-size: 1rem;
+    padding: 8px 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.browdcaste {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.padlock {
+    width: 420px;
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.toggle-theme {
+    display: block;
+    margin-top: 20px;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.profile-wrapper img {
+    width: 420px;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.profile-box {
+    border: 2px solid #333;
+    padding: 60px 80px;
+    text-align: left;
+}
+
+.error {
+    color: red;
+}
+
+.boo {
+    width: 80px;
+    margin-top: 8px;
+}
+
+.woo {
+    width: 180px;
+    margin: 10px auto;
+    display: block;
+}

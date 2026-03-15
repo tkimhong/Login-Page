@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Instantgram.com</h1>
-  <p>Free Login!!! Click Here:</p>
+  <p class="free-login">Free Login!!! Click Here:</p>
 
   <div class="login-wrapper">
     <img src="/winning-smile.webp" alt="thumbs up" />
@@ -8,6 +8,7 @@
     <div class="form-box">
       {{#if error}}
         <p class="error">{{error}}</p>
+        <img src="/booooo.webp" alt="boo" class="boo" />
       {{/if}}
 
       <form action="/login" method="POST">
@@ -32,9 +33,9 @@
     <img src="/winning-smile.webp" alt="thumbs up" />
   </div>
 
-  <p>Browdcaste yourselve!!!</p>
+  <p class="browdcaste">Browdcaste yourselve!!!</p>
 
-  <img src="/padlock.webp" alt="Connection Secure" />
+  <img class="padlock" src="/padlock.webp" alt="Connection Secure" />
 
-  <a href="/toggle-theme">+++ Secure Toggle Theme +++</a>
+  <a class="toggle-theme" href="/toggle-theme">+++ Secure Toggle Theme +++</a>
 </div>
