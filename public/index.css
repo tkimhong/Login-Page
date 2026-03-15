@@ -100,9 +100,15 @@ h2 {
     margin: 10px auto 20px;
 }
 
-.toggle-theme {
-    display: block;
-    margin-top: 20px;
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+body.dark .nav a {
+    color: #7eb8f7;
 }
 
 .profile-wrapper {
