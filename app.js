@@ -43,3 +43,8 @@ const requireLogin = (req, res, next) => {
     res.redirect("/login");
   }
 };
+
+// GET /login
+app.get("/login", (req, res) => {
+  res.render("login");
+});
