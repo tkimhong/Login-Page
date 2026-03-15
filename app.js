@@ -86,3 +86,7 @@ app.get("/toggle-theme", (req, res) => {
 
   res.redirect("back");
 });
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
