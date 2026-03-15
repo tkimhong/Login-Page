@@ -73,3 +73,16 @@ app.get("/logout", (req, res) => {
   res.clearCookie("connect.sid");
   res.redirect("/login");
 });
+
+// GET /toggle-theme
+app.get("/toggle-theme", (req, res) => {
+  const currentTheme = req.signedCookies.theme || "light";
+  const newTheme = currentTheme === "light" ? "dark" : "light";
+
+  res.cookie("theme", newTheme, {
+    signed: true,
+    httpOnly: true,
+  });
+
+  res.redirect("back");
+});
